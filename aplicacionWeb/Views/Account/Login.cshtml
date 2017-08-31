@@ -66,7 +66,7 @@
 
             <md-toolbar>
                 <div class="md-toolbar-tools">
-                    <h2><span>Registro</span></h2>
+                    <h2><span>Login</span></h2>
                 </div>
             </md-toolbar>
 
@@ -97,8 +97,10 @@
                         </div>
 
                     </md-input-container>
-
-                    <md-button ng-disabled="!Form.$valid" ng-click="vm.submit()" class="md-raised md-primary">&nbsp Login &nbsp</md-button>
+                    <div class="md-button-group" flex="xs" >
+                        <md-button ng-disabled="!Form.$valid" ng-click="vm.submit()" class="md-raised md-primary"> Login </md-button>
+                        <md-button ng-disabled="!Form.$valid" ng-click="vm.submit()" class="md-raised md-primary"> Login con google </md-button>
+                    </div>
 
                 </form>
 
@@ -119,16 +121,14 @@
                     password: 'foobar'
                 }
             };
-
         });
 </script>
 
 <style type="text/css">
     .login-form {
-
         md-card       { padding:          0 !important; }
         md-card-title { background-color: blue; }
-     }
+     }  
         
      
 </style>
