@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aplicacionWeb", "aplicacionWeb\aplicacionWeb.csproj", "{5C3EB4DE-860C-4B4E-AD0A-33CDF25A6FD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pizzeria", "aplicacionWeb\pizzeria.csproj", "{5C3EB4DE-860C-4B4E-AD0A-33CDF25A6FD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CF873AC-2ADB-49B2-92B8-8895127D16E2}
 	EndGlobalSection
 EndGlobal
