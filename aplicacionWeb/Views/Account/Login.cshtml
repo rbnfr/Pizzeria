@@ -97,7 +97,7 @@
                         </div>
 
                     </md-input-container>
-                    <div class="md-button-group" flex="xs" >
+                    <div class="md-button-group" flex="gt-xs" >
                         <md-button ng-disabled="!Form.$valid" ng-click="vm.submit()" class="md-raised md-primary"> Login </md-button>
                         <md-button ng-disabled="!Form.$valid" ng-click="vm.submit()" class="md-raised md-primary"> Login con google </md-button>
                     </div>
@@ -112,26 +112,7 @@
 
 </div>
 
-<script type="text/javascript">
-    var app = angular.module('LoginForm', ['ngMaterial', 'ngAnimate', 'ngAria', 'ngMessages'])
-        .controller('CtrlLogin', function ($scope) {
-            $scope.vm = {
-                formData: {
-                    email: 'correo@ejemplo.com',
-                    password: 'foobar'
-                }
-            };
-        });
-</script>
-
-<style type="text/css">
-    .login-form {
-        md-card       { padding:          0 !important; }
-        md-card-title { background-color: blue; }
-     }  
-        
-     
-</style>
+<script src="~/Scripts/CustomScripts/login.js"></script>
 
     @section Scripts {
         @Scripts.Render("~/bundles/angular")
