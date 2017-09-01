@@ -15,11 +15,11 @@
                     <img src="https://cdn.dribbble.com/users/404971/screenshots/1241486/pizza-logo.png" width="80" height="80">
                     <h1 class="md-toolbar-tools">Pizzería</h1>                    
                 </md-toolbar>
-                
-                    <md-button ng-click="close()" ng-href="~/Account/Login" class="md-primary">Ver pizzas</md-button><br />
+                <div class="md-button-group" flex="66">
+                    <md-button style="width: auto;" ng-click="close()" ng-href="~/Account/Login" class="md-primary">Ver pizzas</md-button><br />
                     <md-button ng-click="close()" class="md-primary">Añadir pizza</md-button><br />
                     <md-button ng-click="close()" class="md-primary">Logout</md-button><br />
-
+                </div>
             </md-sidenav>
 
             <div>
@@ -34,3 +34,8 @@
 </div>
 
 <script src="~/Scripts/sidenav.js"></script>
+<style type="text/css">
+    .md-button-group {
+        display: block;        
+    }
+</style>
